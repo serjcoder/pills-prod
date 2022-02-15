@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20G314" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Pill" representedClassName="Pill" syncable="YES" codeGenerationType="class">
+        <attribute name="compositionDescript" optional="YES" attributeType="String"/>
+        <attribute name="compositionInn" optional="YES" attributeType="String"/>
+        <attribute name="compositionPharmForm" optional="YES" attributeType="String"/>
+        <attribute name="manufactured" optional="YES" attributeType="String"/>
+        <attribute name="packagengDescription" optional="YES" attributeType="String"/>
+        <attribute name="trade" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Pill" positionX="-63" positionY="-18" width="128" height="14"/>
+    </elements>
+</model>

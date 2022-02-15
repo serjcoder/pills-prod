@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "777A0BB6-BC91-40F6-9EDB-B5895B52058B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "98D4F085-8B3C-469B-9C73-F0D18B325C0D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pills-prod/ItemPillViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "ItemPillViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "98D4F085-8B3C-469B-9C73-F0D18B325C0D - d0a9f19b7bf15718"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pills_prod.ItemPillViewController.trade.getter : Swift.String"
+                  moduleName = "pills-prod"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergei.ivchenko/Documents/pills-prod/pills-prod/ItemPillViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "139">
+               </Location>
+               <Location
+                  uuid = "98D4F085-8B3C-469B-9C73-F0D18B325C0D - a447b2b670c8470c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pills_prod.ItemPillViewController.trade.setter : Swift.String"
+                  moduleName = "pills-prod"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergei.ivchenko/Documents/pills-prod/pills-prod/ItemPillViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "174">
+               </Location>
+               <Location
+                  uuid = "98D4F085-8B3C-469B-9C73-F0D18B325C0D - 87465567d1e1a988"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pills_prod.ItemPillViewController.trade.modify : Swift.String"
+                  moduleName = "pills-prod"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergei.ivchenko/Documents/pills-prod/pills-prod/ItemPillViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "98D4F085-8B3C-469B-9C73-F0D18B325C0D - e90192b93f9ddd0c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pills_prod.ItemPillViewController.trade.modify : Swift.String with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "pills-prod"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergei.ivchenko/Documents/pills-prod/pills-prod/ItemPillViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "98D4F085-8B3C-469B-9C73-F0D18B325C0D - bf3633fe26129629"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pills_prod.ItemPillViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; pills_prod.ItemPillViewController"
+                  moduleName = "pills-prod"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergei.ivchenko/Documents/pills-prod/pills-prod/ItemPillViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "709">
+               </Location>
+               <Location
+                  uuid = "98D4F085-8B3C-469B-9C73-F0D18B325C0D - b73900758eae20ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pills_prod.ItemPillViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;pills_prod.ItemPillViewController&gt;"
+                  moduleName = "pills-prod"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergei.ivchenko/Documents/pills-prod/pills-prod/ItemPillViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "653">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D425EC84-103E-4FAE-A240-EA7E908C8C04"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pills-prod/ItemPillViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

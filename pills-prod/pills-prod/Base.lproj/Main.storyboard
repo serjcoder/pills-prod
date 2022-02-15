@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pills View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PillsViewController" customModule="pills_prod" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EIf-Wg-f1X">
+                                <rect key="frame" x="0.0" y="45" width="414" height="831"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="5I3-UN-1AV">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="z0e-rU-344"/>
+                                        </constraints>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="S42-ve-vLH"/>
+                                        </connections>
+                                    </searchBar>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CEb-jG-I3n">
+                                        <rect key="frame" x="0.0" y="56" width="414" height="775"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="73" id="KKl-6c-V6p" customClass="Cell" customModule="pills_prod" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="24.5" width="414" height="73"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KKl-6c-V6p" id="G6b-oT-U6b">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="73"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2oG-c0-h0j">
+                                                            <rect key="frame" x="5" y="5" width="404" height="63"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="aWW-4D-WrA">
+                                                                    <rect key="frame" x="5" y="5" width="394" height="53"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="583-c2-FBV">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="394" height="20"/>
+                                                                            <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="15"/>
+                                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mcb-VV-pcV">
+                                                                            <rect key="frame" x="0.0" y="34.5" width="394" height="18.5"/>
+                                                                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="bottom" secondItem="aWW-4D-WrA" secondAttribute="bottom" constant="5" id="27o-7g-l9M"/>
+                                                                <constraint firstAttribute="trailing" secondItem="aWW-4D-WrA" secondAttribute="trailing" constant="5" id="tvj-em-MgA"/>
+                                                                <constraint firstItem="aWW-4D-WrA" firstAttribute="leading" secondItem="2oG-c0-h0j" secondAttribute="leading" constant="5" id="ubL-fu-srb"/>
+                                                                <constraint firstItem="aWW-4D-WrA" firstAttribute="top" secondItem="2oG-c0-h0j" secondAttribute="top" constant="5" id="xRu-Ha-ekJ"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="2oG-c0-h0j" firstAttribute="leading" secondItem="G6b-oT-U6b" secondAttribute="leadingMargin" constant="-15" id="0dc-dz-U5b"/>
+                                                        <constraint firstItem="2oG-c0-h0j" firstAttribute="top" secondItem="G6b-oT-U6b" secondAttribute="topMargin" constant="-6" id="7Q4-te-Ye7"/>
+                                                        <constraint firstItem="2oG-c0-h0j" firstAttribute="centerY" secondItem="G6b-oT-U6b" secondAttribute="centerY" id="oYD-cl-Xgp"/>
+                                                        <constraint firstItem="2oG-c0-h0j" firstAttribute="centerX" secondItem="G6b-oT-U6b" secondAttribute="centerX" id="xpY-zZ-oAI"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="manufacturerName" destination="Mcb-VV-pcV" id="Bz3-NR-qwV"/>
+                                                    <outlet property="tradeLabel" destination="583-c2-FBV" id="vpE-lU-4A7"/>
+                                                    <segue destination="HPf-1h-MRk" kind="showDetail" identifier="viewItemPill" id="CKR-hB-iqQ"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="BmR-o6-JOd"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="lh9-9C-gI4"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CEb-jG-I3n" firstAttribute="top" secondItem="5I3-UN-1AV" secondAttribute="bottom" constant="6" id="wk2-py-xT1"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EIf-Wg-f1X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="HwQ-GX-pEb"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="EIf-Wg-f1X" secondAttribute="bottom" constant="-14" id="YQK-xm-STj"/>
+                            <constraint firstAttribute="trailing" secondItem="EIf-Wg-f1X" secondAttribute="trailing" id="f9A-8U-kUE"/>
+                            <constraint firstItem="EIf-Wg-f1X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kCd-dy-t3C"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="5I3-UN-1AV" id="NNb-2E-Ok6"/>
+                        <outlet property="table" destination="CEb-jG-I3n" id="3IZ-19-3iv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-68.115942028985515" y="78.348214285714278"/>
+        </scene>
+        <!--Item Pill View Controller-->
+        <scene sceneID="YR9-y9-EOK">
+            <objects>
+                <viewController id="HPf-1h-MRk" customClass="ItemPillViewController" customModule="pills_prod" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Si-tA-i0x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="top" axis="vertical" distribution="equalSpacing" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="MfJ-YV-NoQ">
+                                <rect key="frame" x="10" y="30" width="394" height="185"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trade" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bc3-3m-Dcz">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manufactured" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srf-g2-Vm5">
+                                        <rect key="frame" x="0.0" y="36.5" width="394" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Packageng Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAo-aJ-wQs">
+                                        <rect key="frame" x="0.0" y="69" width="394" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Composition Descript" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cs6-1M-rJw">
+                                        <rect key="frame" x="0.0" y="101.5" width="394" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Composition Inn" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twx-8K-Hk3">
+                                        <rect key="frame" x="0.0" y="134" width="394" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Composition Pharm Form" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xu7-5Y-RqX" userLabel="сomposition Pharm Form">
+                                        <rect key="frame" x="0.0" y="166.5" width="394" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHt-ta-7DE">
+                                <rect key="frame" x="10" y="225" width="120" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="3Wq-oA-gtV"/>
+                                    <constraint firstAttribute="height" constant="30" id="fCJ-wN-yTE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
+                                <state key="normal" title="Зберегти">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButtonTap:" destination="HPf-1h-MRk" eventType="touchUpInside" id="Mvk-ZI-fS8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxR-gk-U5j">
+                                <rect key="frame" x="374" y="10" width="30" height="30"/>
+                                <connections>
+                                    <action selector="closeButton:" destination="HPf-1h-MRk" eventType="touchUpInside" id="EcC-gZ-Xzb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ULX-1R-cHJ"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="qxR-gk-U5j" firstAttribute="top" secondItem="ULX-1R-cHJ" secondAttribute="top" constant="10" id="501-ZD-ikI"/>
+                            <constraint firstItem="MfJ-YV-NoQ" firstAttribute="top" secondItem="ULX-1R-cHJ" secondAttribute="top" constant="30" id="AuK-2C-jl2"/>
+                            <constraint firstItem="ULX-1R-cHJ" firstAttribute="trailing" secondItem="MfJ-YV-NoQ" secondAttribute="trailing" constant="10" id="Azy-vh-IVz"/>
+                            <constraint firstItem="fHt-ta-7DE" firstAttribute="leading" secondItem="ULX-1R-cHJ" secondAttribute="leading" constant="10" id="LBg-W3-aBl"/>
+                            <constraint firstAttribute="trailing" secondItem="qxR-gk-U5j" secondAttribute="trailing" constant="10" id="iHw-YE-J7y"/>
+                            <constraint firstItem="MfJ-YV-NoQ" firstAttribute="leading" secondItem="ULX-1R-cHJ" secondAttribute="leading" constant="10" id="mvN-UB-ta1"/>
+                            <constraint firstItem="fHt-ta-7DE" firstAttribute="top" secondItem="MfJ-YV-NoQ" secondAttribute="bottom" constant="10" id="y7e-Z6-XbN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="azN-rI-JFq"/>
+                    <connections>
+                        <outlet property="compositionDescriptLabel" destination="cs6-1M-rJw" id="vEk-oL-knC"/>
+                        <outlet property="compositionInnLabel" destination="Twx-8K-Hk3" id="sHz-Kj-Wcj"/>
+                        <outlet property="manufacturedLabel" destination="srf-g2-Vm5" id="mie-qE-qdz"/>
+                        <outlet property="packagengDescriptionLabel" destination="dAo-aJ-wQs" id="tXG-qn-Zgg"/>
+                        <outlet property="saveButton" destination="fHt-ta-7DE" id="ZhV-am-Nvy"/>
+                        <outlet property="tradeLabel" destination="bc3-3m-Dcz" id="zy7-CG-sVA"/>
+                        <outlet property="сompositionPharmFormLabel" destination="xu7-5Y-RqX" id="5pM-2N-NEZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QqP-Fn-mxb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1082.608695652174" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
